@@ -5,12 +5,12 @@ import CardService from "./CardService";
 
 function Services() {
   return (
-    <div className="font-poppins">
-      <h2 className="text-2xl font-medium w-[259px] pl-7">
+    <div className="font-poppins" id="services">
+      <h2 className="text-2xl font-medium w-[259px] pl-7 md:text-4xl md:w-[346px]">
         We offer high demand services
       </h2>
 
-      <div className="py-10 flex flex-col gap-7">
+      <div className="py-10 flex flex-col md:flex-row md:justify-around">
         <CardService
           icon={<MdModeEdit size={36} />}
           name="UI/UX Design"

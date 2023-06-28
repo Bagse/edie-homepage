@@ -15,7 +15,7 @@ function CardService({ icon, name, info, colorIcon }) {
   const buttonTextColor = isHovered ? "text-white" : "text-[#828282]";
   return (
     <div
-      className="py-5 hover:shadow-xl hover:rounded-2xl hover:cursor-pointer hover:bg-gray-100 pl-7 flex flex-col  gap-y-9"
+      className="py-5 hover:shadow-xl hover:rounded-2xl hover:cursor-pointer hover:bg-gray-100 pl-7 flex flex-col  gap-y-9 lg:w-[341px] md:w-[210px]"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
@@ -26,7 +26,7 @@ function CardService({ icon, name, info, colorIcon }) {
       </div>
       <div className="font-poppins flex flex-col gap-5">
         <h4 className="text-[#333333] font-bold text-2xl">{name}</h4>
-        <p className="text-[#4F4F4F] font-normal w-[273px] py-5 text-base">
+        <p className="text-[#4F4F4F] font-normal w-[273px] py-5 text-base md:w-[200px] lg:w-[270px]">
           {info}
         </p>
         <button
